@@ -12,3 +12,67 @@ Next week I will:
 
 - Organize my notes and start writing the literature review.
 
+
+
+
+
+
+
+What is Django Framework?
+Django is a Python web framework that helps you build web applications quickly and easily. It follows the Model-View-Controller (MVC) pattern (called Model-View-Template in Django) to separate the data (Model), the user interface (Template), and the business logic (View). It has built-in features like an admin panel, database management, and security tools which make web development faster.
+
+Main Parts of Your Merit & Demerit System Project
+1. Models (Data Structure)
+Models are Python classes that define your database tables. For a merit-demerit system, you might have models like:
+
+python
+Copy
+Edit
+from django.db import models
+
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    roll_number = models.CharField(max_length=20, unique=True)
+
+class Merit(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    reason = models.TextField()
+    points = models.IntegerField()
+    date = models.DateField(auto_now_add=True)
+
+class Demerit(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    reason = models.TextField()
+    points = models.IntegerField()
+    date = models.DateField(auto_now_add=True)
+2. Views (Logic to display data)
+Views handle the user requests and return responses. A simple example to list merits might be:
+
+python
+Copy
+Edit
+from django.shortcuts import render
+from .models import Merit
+
+def merit_list(request):
+    merits = Merit.objects.all()
+    return render(request, 'merit_list.html', {'merits': merits})
+3. Admin Panel Setup (Manage data easily)
+Django comes with a built-in admin panel where you can manage your data without building UI from scratch. Register your models like this:
+
+python
+Copy
+Edit
+from django.contrib import admin
+from .models import Student, Merit, Demerit
+
+admin.site.register(Student)
+admin.site.register(Merit)
+admin.site.register(Demerit)
+Literature Review Work
+Collected research articles and papers related to merit and demerit systems in schools or organizations.
+
+Reviewed how other systems track behavior, assign points, and generate reports.
+
+Took notes on important points such as the criteria for awarding merits and demerits, user interface designs, and common challenges faced in these systems.
+
