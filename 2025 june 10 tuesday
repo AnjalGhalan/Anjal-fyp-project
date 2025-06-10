@@ -1,0 +1,81 @@
+✅ Weekly Log (This Week)
+What I did:
+
+- Finished making the Django models and connected them to the SQLite database.
+
+- Designed a simple layout of the website (home page, login, and dashboard wireframe).
+
+- Organized all literature review notes and started writing the first draft.
+
+
+📌 Next Week Plan
+To Do:
+
+- Implement user authentication (login/logout) using Django.
+
+- Start frontend pages using HTML, CSS (Home, Login, Dashboard).
+
+- Finish first draft of the literature review for documentation.
+
+
+
+
+
+
+
+
+
+🧾 Simple Proof of Work
+✅ 1. Django Models (Completed)
+python
+Copy
+Edit
+from django.db import models
+
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    roll_number = models.CharField(max_length=20, unique=True)
+
+class Merit(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    reason = models.TextField()
+    points = models.IntegerField()
+    date = models.DateField(auto_now_add=True)
+
+class Demerit(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    reason = models.TextField()
+    points = models.IntegerField()
+    date = models.DateField(auto_now_add=True)
+✅ 2. Database Connection (SQLite - default)
+Confirmed models.py is migrated successfully:
+
+bash
+Copy
+Edit
+python manage.py makemigrations
+python manage.py migrate
+✅ 3. Website Layout (Simple Design)
+Wireframe layout:
+
+Home Page: Project title + login
+
+Login Page: Role-based (Student / Admin / Teacher)
+
+Dashboard: Table view of merits/demerits, add new record button
+
+(You can show a hand-drawn or Figma layout screenshot for proof if needed)
+
+✅ 4. Literature Review Notes
+Summarized 3 articles discussing behavior monitoring in schools.
+
+Key points noted:
+
+Point-based tracking improves discipline.
+
+Importance of role-based access.
+
+Need for automated reporting tools.
+
+
+
