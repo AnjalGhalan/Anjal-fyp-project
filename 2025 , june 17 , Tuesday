@@ -1,0 +1,82 @@
+✅ Weekly Log (This Week)
+
+What I did:
+
+- Implemented basic user authentication (login/logout) using Django.
+
+- Created basic frontend pages: Home, Login, and Dashboard (HTML, CSS).
+
+- Completed the first draft of the literature review for documentation.
+
+                                                                           Proof of Work (Code Snippets)
+
+                                        models.py
+                                                                  from django.db import models
+
+                                                                  class Student(models.Model):
+                                                                      name = models.CharField(max_length=100)
+                                                                      roll_number = models.CharField(max_length=20, unique=True)
+                                                                  
+                                                                  class Merit(models.Model):
+                                                                      student = models.ForeignKey(Student, on_delete=models.CASCADE)
+                                                                      reason = models.TextField()
+                                                                      points = models.IntegerField()
+                                                                      date = models.DateField(auto_now_add=True)
+                                                                  
+                                                                  class Demerit(models.Model):
+                                                                      student = models.ForeignKey(Student, on_delete=models.CASCADE)
+                                                                      reason = models.TextField()
+                                                                      points = models.IntegerField()
+                                                                      date = models.DateField(auto_now_add=True)
+
+
+
+
+
+                                          views.py
+
+                                                                  from django.shortcuts import render, redirect
+                                                                  from django.contrib.auth import authenticate, login, logout
+                                                                  
+                                                                  def home(request):
+                                                                      return render(request, 'home.html')
+                                                                  
+                                                                  def user_login(request):
+                                                                      if request.method == 'POST':
+                                                                          username = request.POST['username']
+                                                                          password = request.POST['password']
+                                                                          user = authenticate(request, username=username, password=password)
+                                                                          if user is not None:
+                                                                              login(request, user)
+                                                                              return redirect('dashboard')
+                                                                      return render(request, 'login.html')
+                                                                  
+                                                                  def user_logout(request):
+                                                                      logout(request)
+                                                                      return redirect('home')
+                                                                  
+                                                                  def dashboard(request):
+                                                                      return render(request, 'dashboard.html')
+
+
+
+#Reference Links (Other students doing similar project):
+
+- Web based School management system
+                             https://github.com/ghrimx/StudX
+
+                             
+-  A project to deal with merit demerit system in a school
+                            https://github.com/RustamKarimov/discipline
+
+
+📌 Next Week Plan
+To Do:
+
+- Add role-based access (Student, Teacher, Admin).
+
+- Start developing functionality to add and view merits/demerits.
+
+- Begin preparing project presentation slides.
+                            
+ 
