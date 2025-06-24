@@ -1,0 +1,47 @@
+What I did:
+
+- Implemented role-based access (Student, Teacher, Admin) using Django groups/permissions.
+
+- Developed functionality to add and view merits and demerits.
+
+- Completed 10 literature review points from articles and papers.
+
+- Finalized project aims & objectives.
+
+Next Week Plan
+To Do:
+
+- Improve dashboard with charts (behavior trends).
+
+- Add notifications for merit/demerit points.
+
+
+
+TEN Literature Review Points (Summary):
+
+- Point-based systems improve student behavior tracking.
+- Automation reduces human error compared to manual logs.
+- Teacher perception of fairness increases when systems are transparent.
+- Dashboards help visualize trends over time.
+- Role-based access keeps data secure.
+- Real-time updates improve school discipline efficiency.
+- Mobile-friendly systems are preferred by teachers.
+- Historical records help in decision-making.
+- Integration with existing ERP systems is valuable.
+- Privacy and data protection must be ensured.
+
+Aims & Objectives
+
+Aim:
+
+- To develop a web-based Merit-Demerit System (MDS) for tracking and managing student behavior in educational institutions.
+
+Objectives:
+
+- Build a secure role-based platform (Admin, Teacher, Student).
+- Implement features to record and display merits/demerits.
+- Develop an admin dashboard for behavior trends.
+- Create user-friendly interfaces (desktop and mobile).
+- Conduct testing and improve usability based on feedback.
+- Ensure data privacy and security of student records.
+
