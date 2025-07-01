@@ -1,0 +1,24 @@
+What I did:
+- Added user registration feature along with login and logout.
+- Made small changes in old code to fix issues and clean up views.
+- Improved the website design using Bootstrap for better layout and look.
+- Started writing the literature review, aims, and objectives for documentation.
+
+
+
+Literature Review
+- Read articles about merit and demerit systems used in schools.
+- Noted how behavior tracking helps improve discipline.
+- Compared manual record-keeping with digital systems.
+- Found examples of how schools use similar web tools to manage student behavior.
+
+Aim:
+- To create a simple web system where students’ good and bad behavior can be recorded easily by teachers or admins.
+
+Objectives:
+- Make a login and registration system.
+- Allow teachers to add merit/demerit points to students.
+- Show student behavior reports in one place.
+- Keep the design easy to use and mobile-friendly.
+
+
