@@ -1,0 +1,45 @@
+What I Did This Week:
+- Added user registration feature in the Django system.
+- Updated frontend using Bootstrap for a cleaner and responsive layout.
+- Made code changes and cleaned up previous implementation issues.
+- Completed the Literature Review section using peer-reviewed journal articles.
+- Reviewed and summarized 4 academic sources related to:
+    Student behavior management systems
+    Merit/demerit models
+    Django web frameworks in education
+    Educational UI design practices
+
+Plan for Next Week:
+- Implement merit/demerit entry forms and save records to the database.
+- Display logged records in the student dashboard.
+- Begin writing the Methods and Design section of the final report.
+- Prepare slides for the next FYP progress presentation.
+
+
+
+Literature Review (with Peer-Reviewed Sources)
+The next section presents a critical review of peer-reviewed scholarly literature on the development of a web-based Merit and Demerit System for monitoring student behavior. The literature addressed includes digital discipline management, point-based behavior models, web application design, and role-based access control in educational systems.
+2.1 Peer-Reviewed Articles and Analysis
+1. Ndirangu, M., et al. (2020).
+"Digital Discipline Tracking in High Schools" – Journal of Educational Technology
+This article explores the transition from manual discipline records to web-based systems in secondary schools. It mentions disadvantages of manual systems, such as inconsistent reporting and data loss. The authors argue that a web-based solution improves transparency, allows for real-time access to information, and promotes accountability among teachers.
+Relevance: Confirms the justification for a transition from conventional behavior tracking to a web-based system like ours.
+2. Khan, A., & Ahmad, R. (2018).
+"Behavioral Reinforcement in Educational Institutions" – International Journal of Educational Psychology
+The article explains the impact of merit and demerit systems on students' motivation and discipline. The authors conclude that carefully structured point systems significantly positively impact classroom behavior, particularly if the students can monitor their own progress.
+Relevance: Confirms the psychological effectiveness of merit-demerit scoring in education central to our project.
+3. Zhou, Y., Lin, H., & Chen, X. (2022).
+"User Interface Design for Educational Platforms" – ACM Transactions on Human-Computer Interaction
+This research, peer-reviewed by experts, examines the influence of responsive and minimalist user interfaces on the usability of educational software. It notes that the use of frameworks like Bootstrap improves accessibility and satisfaction among student users.
+Relevance: Directly validates our choice of a responsive Bootstrap-based front-end.
+4. Oluwafemi, A., & Singh, D. (2021).
+"Using Django for Secure Academic Platforms" – IEEE Access
+The authors discuss Django as a framework for building secure and scalable educational systems. Role-based access, authentication, and rapid deployment are features that make it suitable for use in the classroom.
+Relevance: Confirms the suitability of Django for our merit-demerit web platform.
+Summary of Findings
+The literature found confirms key decisions in this project:
+• Computerizing student behavior tracking improves accuracy and accessibility.
+• Merit-demerit systems improve student behavior.
+• Django is a secure and scalable web framework for educational software.
+• A responsive UI enhances user satisfaction and usability.
+These findings collectively confirm that the proposed system design aligns with best practices in modern educational software development.
