@@ -1,0 +1,11 @@
+
+What I did:
+Successfully registered models (Student, Merit, Demerit) into the Django admin panel.
+Tested user registration, login, and logout functionality.
+Verified that pages (Home, Login, Register, Dashboard, Admin) are working properly.
+
+
+To Do:
+Add pages to display Merit and Demerit records for students.
+Create a profile page where students can view their own records.
+Improve the dashboard with simple statistics (total merits/demerits).
